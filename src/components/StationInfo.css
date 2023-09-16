@@ -1,0 +1,127 @@
+.content{
+    display: flex;
+}
+
+.search{
+    display: flex;
+    width: 45%;
+    flex-wrap: wrap;
+}
+
+.search .select-list__control{
+    width: 200px;
+    border: none;
+    background-color: #f6f6f6;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.search .select-list__control--is-focused{
+    box-shadow: 0 0 0 1px #b5cc22;
+}
+
+.search .select-list__menu{
+    background-color: #f6f6f6;
+    box-shadow: none;
+}
+
+.search .select-list__option--is-selected{
+    font-weight: bold;
+    background-color: #f6f6f6;
+    color: black;
+}
+
+.search .select-list__option--is-focused{
+    background-color: rgba(181,204,34,0.5);
+}
+
+.search .search-station{
+    display: flex;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.search .search-station .sna{
+    width: 250px;
+    border: none;
+    background-color: #f6f6f6;
+    height: 40px;
+    padding: 0px 11px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+}
+
+
+.search .search-station .sna:focus {
+    color: #b5cc22;
+    outline: none;
+}
+
+.search .search-icon{
+    align-self: center;
+    padding-right: 10px;
+    margin-left: auto;
+}
+
+.search .search-icon i{
+    color: #AEAEAE;
+}
+
+.search .search-icon .focus{
+    color: #b5cc22;
+}
+
+.search .disrict-list{
+    margin: 20px 0;
+}
+
+.search .disrict-list input[type="checkbox"] {
+    accent-color: #677511;
+    margin-right: 15px;
+}
+
+.search .disrict-list .disrict{
+    margin: 0 45px 20px 0;
+    display: inline-block;
+}
+
+.banner{
+    width: 45%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner{
+        display: none;
+    }
+
+    .search,
+    .search .select-list, 
+    .search .select-list__control{
+        width: 100%;
+    }
+
+    .search .select-list{
+        order: 1;
+        margin-top: 20px;
+    }
+
+    .search .search-station{
+        width: 100%;
+        order: 0;
+    }
+
+    .search .disrict-list{
+        order: 2;
+    }
+
+    .search .disrict-list .disrict{
+        margin: 0 35px 20px 0;
+    }
+}

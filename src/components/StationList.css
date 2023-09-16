@@ -1,0 +1,42 @@
+.station-list{
+    margin: 25px 0;
+}
+
+.station-list .station-table{
+    width: 100%;
+    text-align: center;
+    border-left: 1px solid #aeaeae;
+    border-right: 1px solid #aeaeae;
+    border-bottom: 1px solid #aeaeae;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.station-list .station-table .table-body:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+.station-list .station-table .green{
+    color: #b5cc22;
+}
+
+.station-list .station-table .table-header{
+    background-color: #b5cc22;
+    color: white;
+}
+
+.station-list .station-table th,
+.station-list .station-table td{
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .station-list {
+        overflow-x: scroll;
+    }
+
+    .station-list .station-table th, 
+    .station-list .station-table td{
+        min-width: 125px;
+    }
+}
