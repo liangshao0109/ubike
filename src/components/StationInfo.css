@@ -90,10 +90,17 @@
 
 .banner{
     width: 45%;
+    align-self: flex-end;
 }
 
 .banner img{
     width: 100%;
+}
+
+@media only screen and (max-width: 1280px) {
+    .search .search-station{
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
